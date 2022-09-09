@@ -1,10 +1,11 @@
 class Node
   include Comparable
   attr_reader :value
-  def initialize(value, left_child = nil, right_child = nil)
+  attr_accessor :left, :right
+  def initialize(value, left = nil, right = nil)
     @value = value
-    @left_child = left_child
-    @right_child = right_child
+    @left = left
+    @right = right
   end
 
   def is_greater?(node)
