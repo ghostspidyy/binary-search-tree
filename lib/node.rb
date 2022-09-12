@@ -8,10 +8,10 @@ class Node
   end
 
   def is_greater?(node)
-    value > node.value
+    @value > node.value
   end
 
   def is_smaller?(node)
-    value < node.value
+    @value < node.value
   end
 end
