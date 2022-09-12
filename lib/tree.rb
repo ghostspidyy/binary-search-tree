@@ -12,7 +12,7 @@ class Tree
     root_node = Node.new(arr[arr.length/2])
 
     left_arr = arr[0...(arr.length/2)]
-    right_arr = arr[arr.length/2...arr.length]
+    right_arr = arr[(arr.length/2 + 1)...arr.length]
 
     root_node.left = build_tree(left_arr)
     root_node.right = build_tree(right_arr)
@@ -27,5 +27,4 @@ class Tree
   end
 end
 
-tree = Tree.new([3, 2, 1])
-#[1, 7, 4, 23, 8, 9, 4, 3, 5, 7, 9, 67, 6345, 324]
+tree = Tree.new([1, 7, 4, 23, 8, 9, 4, 3, 5, 7, 9, 67, 6345, 324])
